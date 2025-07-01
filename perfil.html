@@ -1,0 +1,94 @@
+<!-- Página inicial do portfólio pessoal de Daniel Jesus -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Daniel Jesus - Fundamentos de Programação WEB</title>
+
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link href="estilo.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="scripts.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <nav class="tab" role="navigation" aria-label="Menu principal">
+        <button class="tablink" onclick="mudaTab(event, 'inicio');"><i class="fas fa-home"></i> Início</button>
+        <button class="tablink" onclick="mudaTab(event, 'sobre');"><i class="fas fa-user"></i> Meu Perfil</button>
+        <button class="tablink" onclick="mudaTab(event, 'formacao');"><i class="fas fa-graduation-cap"></i> Formação</button>
+        <button class="tablink" onclick="mudaTab(event, 'portifolio');"><i class="fas fa-code"></i> Portfólio</button>
+        <button class="tablink" onclick="mudaTab(event, 'contato');"><i class="fas fa-envelope"></i> Contato</button>
+    </nav>
+
+    <main>
+        <header>
+            <h1>Portfólio Pessoal: CV</h1>
+            <h2>Daniel Jesus</h2>
+        </header>
+
+        <article class="tabcontent" id="inicio">
+            <section>
+                <h3>Bem-vindo</h3>
+                <p>Selecione uma das opções do menu acima para navegar pelo conteúdo.</p>
+            </section>
+        </article>
+
+        <article class="tabcontent" id="sobre">
+            <section>
+                <h3>Sobre mim</h3>
+                <p>Olá! Meu nome é Daniel Jesus. Sou estudante de Fundamentos de Programação WEB no Centro Universitário Uninter.</p>
+            </section>
+        </article>
+
+        <article class="tabcontent" id="formacao">
+            <section>
+                <h3>Formação</h3>
+                <p><a class="link" href="https://www.linkedin.com/in/daniel-jesus-0bab7a171/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+            </section>
+        </article>
+
+        <article class="tabcontent" id="portifolio">
+            <section>
+                <h3>Portfólio</h3>
+                <p><a class="link" href="https://github.com/Daniel-savoia" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+            </section>
+        </article>
+
+        <article class="tabcontent" id="contato">
+            <section>
+                <h3>Contato</h3>
+                <p>Preencha o formulário abaixo para entrar em contato comigo.</p>
+            </section>
+
+            <section>
+                <form>
+                    <div>
+                        <label for="nome">Nome*: </label>
+                        <input id="nome" type="text" maxlength="50" placeholder="obrigatório" required />
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail*: </label>
+                        <input id="email" type="email" maxlength="300" placeholder="obrigatório" required />
+                    </div>
+
+                    <div>
+                        <label for="mensagem">Mensagem*: </label>
+                        <textarea id="mensagem" maxlength="5000" placeholder="obrigatório" required rows="5"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>
